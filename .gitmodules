@@ -1,0 +1,6 @@
+[submodule "hive-testbench"]
+	path = hive-testbench
+	url = https://github.com/kaiseu/hive-testbench.git
+[submodule "spark-sql-perf"]
+	path = spark-sql-perf
+	url = https://github.com/kaiseu/spark-sql-perf.git
