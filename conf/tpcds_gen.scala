@@ -11,7 +11,7 @@ val rootDir = s"/tmp/tpcds-generate/${scaleFactor}"
 // location of dsdgen
 val dsdgenDir = "/tmp/tpcds-kit/tools"
 // schemaType can be "partitioned" or "flat"
-val schemaType = "partitioned"
+val schemaType = if (scaleFactor.toInt < 1000) "flat" else "partitioned"
 // name of database to create.
 val databaseName = s"tpcds_${schemaType}_${format}_${scaleFactor}" 
 
